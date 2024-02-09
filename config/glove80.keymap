@@ -79,12 +79,12 @@
 
         UPPER_LAYER {
             bindings = <
-&trans  &trans          &trans           &trans                &trans                                                                                     &trans    &trans  &trans            &trans             &trans
-&trans  &trans          &trans           &trans                &trans                 &trans                                                    &trans    &trans    &trans  &trans            &trans             &trans
-&trans  &trans          &trans           &trans                &trans                 &trans                                                    &trans    &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                                                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT         &kp COLON          &trans
-&trans  &trans          &trans           &trans                &trans                 &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans    &trans  &trans            &trans             &trans
-&trans  &trans          &trans           &trans                &trans                         &trans  &trans  &trans    &trans  &trans  &trans            &trans    &trans  &trans            &trans             &trans
+&trans  &trans          &trans           &trans                &trans                                                                                             &trans             &trans  &trans     &trans     &trans
+&trans  &trans          &trans           &trans                &trans                 &trans                                                    &trans            &trans             &trans  &trans     &trans     &trans
+&trans  &trans          &trans           &trans                &trans                 &trans                                                    &trans            &trans             &trans  &trans     &trans     &trans
+&trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                                                    &kp LEFT          &kp DOWN           &kp UP  &kp RIGHT  &kp COLON  &trans
+&trans  &trans          &trans           &trans                &trans                 &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans     &trans     &trans
+&trans  &trans          &trans           &trans                &trans                         &trans  &trans  &trans    &trans  &trans  &trans                    &trans             &trans  &trans     &trans     &trans
             >;
         };
 

@@ -79,7 +79,7 @@
 
         UPPER_LAYER {
             bindings = <
-&trans  &trans          &trans           &trans                &trans                                                                                             &trans             &trans  &trans     &trans     &trans
+&trans  &trans          &trans           &trans                &trans                                                                                             &trans             &trans  &trans     &trans     &kp PSCRN
 &trans  &trans          &trans           &trans                &trans                 &trans                                                    &trans            &trans             &trans  &trans     &trans     &trans
 &trans  &trans          &trans           &trans                &trans                 &trans                                                    &trans            &trans             &trans  &trans     &trans     &trans
 &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                                                    &kp LEFT          &kp DOWN           &kp UP  &kp RIGHT  &kp COLON  &trans

@@ -28,16 +28,14 @@
             bindings = <&mo 1>, <&tog 2>, <&tog 4>;
         };
 
-        lh_pht: lh_pht {
+        hm: hm {
             compatible = "zmk,behavior-hold-tap";
-            label = "LH_PHT";
+            label = "HM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            flavor = "tap-unless-interrupted";
-            quick-tap-ms = <200>;
-            hold-trigger-key-positions = <40 41 42 43 30>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -80,12 +78,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1     &kp F2            &kp F3          &kp F4          &kp F5                                                                                                                     &kp F6            &kp F7             &kp F8     &kp F9    &kp F10
-&kp GRAVE  &kp N1            &kp N2          &kp N3          &kp N4           &kp N5                                                                                            &kp N6  &kp N7            &kp N8             &kp N9     &kp N0    &kp UP
-&kp TAB    &kp Q             &kp W           &kp E           &kp R            &kp T                                                                                             &kp Y   &kp U             &kp I              &kp O      &kp P     &kp MINUS
-&kp ESC    &lh_pht LSHIFT A  &lh_pht LGUI S  &lh_pht LALT D  &lh_pht LCTRL F  &kp G                                                                                             &kp H   &kp J             &kp K              &kp L      &kp SEMI  &kp BACKSLASH
-&kp GRAVE  &kp Z             &kp X           &kp C           &kp V            &kp B   &kp SPACE         &kp LGUI    &kp DELETE    &mo 1     &kp ENTER        &kp BACKSPACE      &kp N   &kp M             &kp COMMA          &kp DOT    &kp FSLH  &kp SINGLE_QUOTE
-&mo 3      &kp HOME          &kp END         &kp LEFT        &kp RIGHT                &kp LEFT_CONTROL  &kp LSHIFT  &kp LALT      &kp RALT  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp PLUS  &kp DOWN
+&kp F1     &kp F2        &kp F3      &kp F4      &kp F5                                                                                                                 &kp F6            &kp F7             &kp F8     &kp F9    &kp F10
+&kp GRAVE  &kp N1        &kp N2      &kp N3      &kp N4       &kp N5                                                                                            &kp N6  &kp N7            &kp N8             &kp N9     &kp N0    &kp UP
+&kp TAB    &kp Q         &kp W       &kp E       &kp R        &kp T                                                                                             &kp Y   &kp U             &kp I              &kp O      &kp P     &kp MINUS
+&kp ESC    &hm LSHIFT A  &hm LGUI S  &hm LALT D  &hm LCTRL F  &kp G                                                                                             &kp H   &kp J             &kp K              &kp L      &kp SEMI  &kp BACKSLASH
+&kp GRAVE  &kp Z         &kp X       &kp C       &kp V        &kp B   &kp SPACE         &kp LGUI    &kp DELETE    &mo 1     &kp ENTER        &kp BACKSPACE      &kp N   &kp M             &kp COMMA          &kp DOT    &kp FSLH  &kp SINGLE_QUOTE
+&mo 3      &kp HOME      &kp END     &kp LEFT    &kp RIGHT            &kp LEFT_CONTROL  &kp LSHIFT  &kp LALT      &kp RALT  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp PLUS  &kp DOWN
             >;
         };
 

@@ -77,6 +77,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESC>;
+            key-positions = <53 56>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

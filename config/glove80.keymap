@@ -28,13 +28,25 @@
             bindings = <&mo 1>, <&tog 2>, <&tog 4>;
         };
 
-        hm: hm {
+        hm_r: hm_r {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM";
+            label = "HOMEROW_MODS_R";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <250>;
+        };
+
+        hm_l: hm_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
             flavor = "tap-preferred";
         };
     };
@@ -78,12 +90,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1     &kp F2        &kp F3      &kp F4      &kp F5                                                                                                                 &kp F6            &kp F7             &kp F8     &kp F9    &kp F10
-&kp GRAVE  &kp N1        &kp N2      &kp N3      &kp N4       &kp N5                                                                                            &kp N6  &kp N7            &kp N8             &kp N9     &kp N0    &kp UP
-&kp TAB    &kp Q         &kp W       &kp E       &kp R        &kp T                                                                                             &kp Y   &kp U             &kp I              &kp O      &kp P     &kp MINUS
-&kp ESC    &hm LSHIFT A  &hm LGUI S  &hm LALT D  &hm LCTRL F  &kp G                                                                                             &kp H   &kp J             &kp K              &kp L      &kp SEMI  &kp BACKSLASH
-&kp GRAVE  &kp Z         &kp X       &kp C       &kp V        &kp B   &kp SPACE         &kp LGUI    &kp DELETE    &mo 1     &kp ENTER        &kp BACKSPACE      &kp N   &kp M             &kp COMMA          &kp DOT    &kp FSLH  &kp SINGLE_QUOTE
-&mo 3      &kp HOME      &kp END     &kp LEFT    &kp RIGHT            &kp LEFT_CONTROL  &kp LSHIFT  &kp LALT      &kp RALT  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp PLUS  &kp DOWN
+&kp F1     &kp F2    &kp F3        &kp F4         &kp F5                                                                                                                  &kp F6            &kp F7             &kp F8        &kp F9    &kp F10
+&kp GRAVE  &kp N1    &kp N2        &kp N3         &kp N4        &kp N5                                                                                            &kp N6  &kp N7            &kp N8             &kp N9        &kp N0    &kp UP
+&kp TAB    &kp Q     &kp W         &kp E          &kp R         &kp T                                                                                             &kp Y   &kp U             &kp I              &kp O         &kp P     &kp MINUS
+&kp ESC    &kp A     &hm_l LGUI S  &hm_l LCTRL D  &hm_l LALT F  &kp G                                                                                             &kp H   &hm_r RALT J      &hm_r RCTRL K      &hm_r RGUI L  &kp SEMI  &kp BACKSLASH
+&kp GRAVE  &kp Z     &kp X         &kp C          &kp V         &kp B   &kp SPACE         &kp LGUI    &kp DELETE    &mo 1     &kp ENTER        &kp BACKSPACE      &kp N   &kp M             &kp COMMA          &kp DOT       &kp FSLH  &kp SINGLE_QUOTE
+&mo 3      &kp HOME  &kp END       &kp LEFT       &kp RIGHT             &kp LEFT_CONTROL  &kp LSHIFT  &kp LALT      &kp RALT  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL     &kp PLUS  &kp DOWN
             >;
         };
 

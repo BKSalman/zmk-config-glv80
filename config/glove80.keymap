@@ -101,12 +101,12 @@
 
         UPPER_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans          &trans                                                                                                       &trans                 &trans           &trans     &trans     &kp PSCRN
-&trans  &trans  &trans  &trans          &trans                &trans                                                              &trans             &trans                 &trans           &trans     &trans     &trans
-&trans  &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp MINUS  &trans     &trans
-&trans  &trans  &trans  &trans          &trans                &trans                                                              &kp LEFT           &kp DOWN               &kp UP           &kp RIGHT  &kp COLON  &trans
-&trans  &trans  &trans  &trans          &trans                &trans            &trans  &trans  &tog 4    &trans  &trans  &trans  &trans             &trans                 &trans           &trans     &trans     &trans
-&trans  &trans  &trans  &trans          &trans                                  &trans  &trans  &tog 2    &trans  &trans  &trans                     &trans                 &trans           &trans     &trans     &trans
+&trans  &trans  &trans     &trans          &trans                                                                                                       &trans                 &trans           &trans         &trans  &kp PSCRN
+&trans  &trans  &trans     &trans          &trans                &trans                                                              &trans             &trans                 &trans           &trans         &trans  &trans
+&trans  &trans  &trans     &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans         &trans  &trans
+&trans  &trans  &kp CARET  &trans          &kp DOLLAR            &trans                                                              &kp LEFT           &kp DOWN               &kp UP           &kp RIGHT      &trans  &trans
+&trans  &trans  &trans     &trans          &trans                &trans            &trans  &trans  &tog 4    &trans  &trans  &trans  &trans             &kp SINGLE_QUOTE       &kp MINUS        &kp SEMICOLON  &trans  &trans
+&trans  &trans  &trans     &trans          &trans                                  &trans  &trans  &tog 2    &trans  &trans  &trans                     &trans                 &trans           &trans         &trans  &trans
             >;
         };
 

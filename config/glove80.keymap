@@ -84,6 +84,11 @@
             bindings = <&kp ESC>;
             key-positions = <53 56>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <73 70>;
+        };
     };
 
     keymap {

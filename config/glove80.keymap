@@ -237,34 +237,34 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1     &kp F2    &kp F3                        &kp F4                         &kp F5                                                                                                                                  &kp F6                           &kp F7                               &kp F8                         &kp F9         &kp F10
-&kp GRAVE  &kp N1    &kp N2                        &kp N3                         &kp N4                          &kp N5                                                                                          &kp N6  &kp N7                           &kp N8                               &kp N9                         &kp N0         &kp MINUS
-&kp TAB    &kp Q     &kp W                         &kp E                          &kp R                           &kp T                                                                                           &kp Y   &kp U                            &kp I                                &kp O                          &kp P          &kp BACKSLASH
-&kp ESC    &kp A     &HRM_left_ring_v1_TKZ LGUI S  &HRM_left_middy_v1_TKZ LALT D  &HRM_left_index_v1_TKZ LCTRL F  &kp G                                                                                           &kp H   &HRM_right_index_v1_TKZ RCTRL J  &HRM_right_middy_v1_TKZ RIGHT_ALT K  &HRM_right_ring_v1_TKZ RGUI L  &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp GRAVE  &kp Z     &kp X                         &kp C                          &kp V                           &kp B   &kp LEFT_GUI  &kp LALT    &kp DELETE    &trans    &kp RSHIFT       &kp RCTRL            &kp N   &kp M                            &kp COMMA                            &kp DOT                        &kp FSLH       &kp UP
-&mo 4      &kp HOME  &kp END                       &kp LEFT                       &kp RIGHT                               &kp SPACE     &kp LSHIFT  &kp LCTRL     &kp RALT  &repeat 2 ENTER  &repeat 1 BACKSPACE          &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                    &kp EQUAL                      &kp PLUS       &kp DOWN
+&kp F1     &kp F2    &kp F3                        &kp F4                         &kp F5                                                                                                                                 &kp F6                           &kp F7                               &kp F8                         &kp F9         &kp F10
+&kp GRAVE  &kp N1    &kp N2                        &kp N3                         &kp N4                          &kp N5                                                                                         &kp N6  &kp N7                           &kp N8                               &kp N9                         &kp N0         &kp MINUS
+&kp TAB    &kp Q     &kp W                         &kp E                          &kp R                           &kp T                                                                                          &kp Y   &kp U                            &kp I                                &kp O                          &kp P          &kp BACKSLASH
+&kp ESC    &kp A     &HRM_left_ring_v1_TKZ LGUI S  &HRM_left_middy_v1_TKZ LALT D  &HRM_left_index_v1_TKZ LCTRL F  &kp G                                                                                          &kp H   &HRM_right_index_v1_TKZ RCTRL J  &HRM_right_middy_v1_TKZ RIGHT_ALT K  &HRM_right_ring_v1_TKZ RGUI L  &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp GRAVE  &kp Z     &kp X                         &kp C                          &kp V                           &kp B   &kp LEFT_GUI  &kp LALT   &kp DELETE    &trans    &kp RSHIFT       &kp RCTRL            &kp N   &kp M                            &kp COMMA                            &kp DOT                        &kp FSLH       &kp UP
+&mo 4      &kp HOME  &kp END                       &kp LEFT                       &kp RIGHT                               &kp LSHIFT    &kp SPACE  &kp LCTRL     &kp RALT  &repeat 2 ENTER  &repeat 1 BACKSPACE          &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                    &kp EQUAL                      &kp PLUS       &kp DOWN
             >;
         };
 
         SYMBOL {
             bindings = <
-&trans  &trans           &trans       &trans          &trans                                                                                                       &trans                 &trans           &trans             &trans  &kp PSCRN
-&trans  &trans           &trans       &trans          &trans                &trans                                                              &trans             &trans                 &trans           &trans             &trans  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND       &kp DOLLAR            &kp PERCENT                                                         &kp CARET          &kp AMPERSAND          &kp ASTERISK     &kp MINUS          &trans  &trans
-&trans  &trans           &trans       &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                                                    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &trans  &trans
-&trans  &trans           &trans       &trans          &trans                &trans            &trans  &trans  &trans    &trans  &trans  &trans  &kp BACKSLASH      &trans                 &trans           &trans             &trans  &trans
-&trans  &trans           &trans       &trans          &trans                                  &trans  &trans  &trans    &trans  &trans  &trans                     &trans                 &trans           &trans             &trans  &trans
+&trans  &trans           &trans       &trans                &trans                                                                                               &trans         &trans        &trans  &trans  &kp PSCRN
+&trans  &trans           &trans       &trans                &trans                 &trans                                                         &trans         &trans         &trans        &trans  &trans  &trans
+&trans  &trans           &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT                                                    &kp MINUS      &kp AMPERSAND  &kp ASTERISK  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                                                         &kp EQUAL      &trans         &trans        &trans  &trans  &trans
+&trans  &trans           &trans       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans       &trans  &trans  &trans    &trans  &trans  &trans  &kp BACKSLASH  &trans         &trans        &trans  &trans  &trans
+&trans  &trans           &trans       &trans                &trans                              &trans  &trans  &trans    &trans  &trans  &trans                 &trans         &trans        &trans  &trans  &trans
             >;
         };
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                      &trans         &trans       &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans    &trans         &trans       &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans    &trans         &trans       &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans            &trans         &trans       &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                      &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans            &trans     &trans     &trans     &trans  &trans
             >;
         };
 
